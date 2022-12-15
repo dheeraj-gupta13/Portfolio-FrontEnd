@@ -1,0 +1,46 @@
+.problem-overview-container{
+    background-color:aqua;
+    margin:20px;  
+    cursor:pointer;
+    border-radius: 20px;
+    padding: 10px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.problem-overview-tags-container{
+    display: flex;
+}
+
+.problem-overview-header{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.problem-overview-title{
+    font-size: 25px;
+}
+
+
+.right-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.acceptance{
+    font-size: 18px;
+}
+
+.level{
+    background-color:'grey';
+    padding: 4px 8px;
+    border-radius: 40px;        
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+                    
+}

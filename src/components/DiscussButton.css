@@ -1,0 +1,30 @@
+.discuss-container{
+    /* position: absolute;
+    bottom: -1120px;
+    right: 80px; */
+
+    display: flex;
+
+    background-color: white;
+
+    height: 60px;
+    width: 300px;
+    align-items: center;
+    justify-content:space-between;
+    cursor: pointer;
+
+}
+
+.discuss-btn-left{
+    padding-left: 8px;
+}
+.discuss-btn-right{
+    height: 50px;
+    width: 60px;
+    margin-right: 8px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}

@@ -1,0 +1,23 @@
+.theme{
+    position: absolute;
+    right: 10px;
+    top:5px;
+    font-size: 2px;
+}
+
+.parent1{
+    display: flex;
+    margin-top: 80px;
+}
+
+.left2{
+    /* background-color: aqua; */
+    width: 70%; 
+    margin-left: 80px;
+}
+.right2{
+    /* background-color: aquamarine; */
+    /* width: 40%;  */
+    /* height: 100%; */
+    /* height: 500px; */
+}

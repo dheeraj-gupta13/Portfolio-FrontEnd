@@ -1,0 +1,157 @@
+.root{
+    display: flex;
+}
+
+
+.left{
+    position:relative;
+    height: 100%;
+    width: 60%; 
+    margin-left: 80px;
+}
+.right{
+    width: 40%; 
+    height: 100%;
+}
+.heading-in-two-lines{
+    font-size: 60px;
+    font-weight:700;
+    margin-top : 100px;
+}
+
+.sub-heading{
+    font-weight: 700;
+    font-size: 30px;
+    margin: 20px 0;
+}
+.image{
+    width: 100%;
+}
+
+.buttons-container{
+    display: flex;
+    cursor: pointer;
+}
+.resume{
+    background-color: orange;
+    padding: 15px 30px ;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.resume-link{
+    text-decoration: none;
+    color: white;
+}
+
+.projects{
+    padding: 15px 20px ;
+    font-weight: 600;
+}
+
+.projects-container{
+    display: flex;
+}
+
+.arrow{
+    margin-top: 14px;
+    margin-left: -10px;
+    transform: rotate(-45deg);
+}
+
+
+.social-media-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icon{
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+    margin: 15px;
+    height: 40px;
+}
+
+.social-icon:hover{
+    filter: drop-shadow(0px 8px 8px rgba(0,0,0,0.32));
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+.batch{
+    position:absolute;
+    top:110px;
+    left: 250px;
+    font-size:30px;
+    background-color :#318CE7;
+    padding : 8px 16px;
+    border-radius: 100px;
+    color:white;
+    font-weight: 600;
+}
+
+.discuss-btn-container-home{
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
+}
+
+@media only screen and (min-width:321px) and (max-width:768px){
+    .batch{
+        position:absolute;
+        top:130px;
+        left: 250px;
+        font-size:16px;
+        background-color :#6CB4EE;
+        padding : 8px 16px;
+        border-radius: 100px;
+        color:white;
+    }
+}
+
+
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    .batch{
+        position:absolute;
+        top:130px;
+        left: 100px;
+        font-size:12px;
+        background-color :#6CB4EE;
+        padding : 6px 14px;
+        border-radius: 100px;
+        color:white;
+    }
+    .root{
+        width: 100%;
+    }
+    .right{
+        width: 0%;
+    }
+    .social-media-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .social-icon{
+        filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+        margin: 15px;
+        height: 30px;
+    }
+    .heading-in-two-lines{
+        font-size: 50px;
+        margin-top : 40px;
+    }
+    .sub-heading{
+        font-weight: 700;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+}

@@ -1,0 +1,11 @@
+.tag{
+    background: linear-gradient(-45deg,#cb6ce4 20%,#8b53ff);;
+    padding: 10px 18px;
+    border-radius: 100px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    display: flex;
+}

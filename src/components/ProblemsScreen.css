@@ -1,0 +1,27 @@
+.theme{
+    position: absolute;
+    right: 10px;
+    top:5px;
+    font-size: 2px;
+}
+
+.parent1{
+    display: flex;
+    margin-top: 80px;
+}
+
+.tag-heading-prbem-screen{
+   font-size: 40px;
+   margin-left: 20px;
+}
+
+.left1{
+    width: 70%; 
+    margin-left: 80px;
+    height: 100%;
+}
+.right1{
+    width: 30%; 
+    padding: 10px;
+    height: 100%;
+}

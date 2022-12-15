@@ -1,0 +1,15 @@
+
+.search-bar-container{
+    margin-bottom: 10px;
+}
+
+.tags-wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+.tags-container{
+    /* display: flex; */
+    cursor: pointer;
+    flex:  1 0 auto;
+}

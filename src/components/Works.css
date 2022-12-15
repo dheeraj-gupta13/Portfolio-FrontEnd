@@ -1,0 +1,95 @@
+.works-wrapper{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.works-left{
+    /* background-color: #c7666c; */
+    width: 50%;
+    margin-top: 40px;
+
+    
+}
+
+.works-right{
+    /* background-color: antiquewhite; */
+    width: 50%;
+    margin-top: 40px;
+}
+
+.work-heading{
+    display: flex;
+    justify-content: center;
+}
+
+.work-card-wrapper{
+    background-color: white;
+    padding: 2vw;
+    border-radius: 25px;
+    box-shadow:0.3rem 0.3rem 0.5rem #e2e3e5, -0.2rem -0.2rem 0.5rem #f3f4f5;
+    margin-bottom: 20px;    
+
+    width: 90%;
+}
+
+.work-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: greenyellow; */
+    padding-left: 50px ;
+}
+
+
+.work-card-timeline-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.work-card-timeline{
+    border-bottom: 0.125rem solid #ebebeb;
+    color: #bdbaba;
+    display: inline-block;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .0625rem;
+    line-height: 1;
+    margin: 0 0 0.75rem;
+    padding: 0 0 0.25rem;
+    text-transform: uppercase;
+}
+
+
+.work-card-heading-title{
+    color: #000;
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0 0 0.5rem;
+    text-align: left;
+}
+
+.work-card-heading-company{
+    border-bottom: 0.0625rem solid #ebebeb;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0 0 1.125rem;
+    padding: 0 0 1rem;
+    text-align: left;
+}
+
+
+.work-card-information{
+    color: #777;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.35;
+    margin: 7px 0;
+    text-align: left;
+}
+
