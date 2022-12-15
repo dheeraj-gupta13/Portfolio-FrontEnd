@@ -30,7 +30,9 @@ const WorkRatingsCard = ({ratings}) => {
   return (
     <div className='work-card-wrapper'>
         <div className='work-card-timeline-wrapper'>
-          <div className='work-card-timeline'>{ratings.PlatformTime}</div>
+          <a target="_blank"  href={ratings.PlatFormLink} >
+            <div className='work-card-timeline'>{ratings.PlatFormLink}</div>
+          </a>
         </div>
 
         <div className='work-card-heading'>
