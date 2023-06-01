@@ -6,7 +6,7 @@ import {ArrowRightOutlined} from '@ant-design/icons'
 import {themeContext} from '../App'
 import { useNavigate } from 'react-router-dom'
 import DiscussButton from './DiscussButton'
-
+import Loading from './Loading'
 
 import github from '../assets/gh.png'
 import linkedin from '../assets/li.png'
@@ -69,15 +69,15 @@ const Home = () => {
     
   return (
 
-    <div className='parent'>
+    <div className='parent' style={{backgroundColor :(theme == 'DARK') ? "#FEFCFF" : 'black'}}>
 
       {
         (fetching) 
         ? 
-          <div>Loading...</div> 
+          <Loading/>
         : 
 
-        <div className='root' style={{backgroundColor :(theme == 'DARK') ? "#FEFCFF" : 'black'}}>
+        <div className='root'>
           <div className='left'>
 
           <span className='batch'>{data.jargons[idx]}</span>
@@ -103,7 +103,7 @@ const Home = () => {
 
 
             <div className="social-media-container">
-                <a target="_blank"  href="https://github.com/Dheeraj13042002"  >
+                <a target="_blank"  href="https://github.com/dheeraj-gupta13"  >
                   {
                     (theme == 'DARK') ?
                     <img src={github} alt="github" className='social-icon' />
@@ -111,7 +111,7 @@ const Home = () => {
                     <img src={githubPurple} alt="github" className='social-icon' />
                   }
                 </a>
-                <a target="_blank"  href="https://www.linkedin.com/in/dheeraj-gupta-8861461bb/"  >
+                <a target="_blank"  href="https://www.linkedin.com/in/dheeraj-gupta-/"  >
                     <img src={linkedin} alt="linkedin" className='social-icon' />
                 </a>
                 <a target="_blank"  href="https://www.instagram.com/dheeraj_gupta13/"  >

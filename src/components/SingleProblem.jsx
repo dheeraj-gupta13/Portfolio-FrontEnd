@@ -120,21 +120,21 @@ function SingleProblem() {
                 }
             </div>
 
-            <div className='question-wrapper'>
+            {/* <div className='question-wrapper'>
                 {
                     ProblemQuestionParas.map((para) => (
 
                         <div>{para}</div>
                     ))
                 }
-            </div>
-            <div className='test-case-wrapper'>
+            </div> */}
+            {/* <div className='test-case-wrapper'>
                 {
                     ProblemTestCases.map((testCase) => ( 
                         <TestCaseWrapper input={testCase.input} output={testCase.output} description={testCase.description} />
                     ))
                 }
-            </div>
+            </div> */}
 
             <div className='approach-wrapper'>
                 <div className='approach-heading'>Approach</div>

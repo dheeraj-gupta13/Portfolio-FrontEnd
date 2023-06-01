@@ -1,5 +1,6 @@
 .problem-overview-container{
-    background-color:aqua;
+    background-color:#fffafa;
+    box-shadow:0.3rem 0.3rem 0.5rem #e2e3e5, -0.2rem -0.2rem 0.5rem #f3f4f5;
     margin:20px;  
     cursor:pointer;
     border-radius: 20px;

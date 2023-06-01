@@ -6,9 +6,6 @@
     display: flex;
     flex-direction: row;
     padding-left: 90px;
-    /* background-color: #f5f */
-
-    /* height: 100%; */
 }
 
 .aboutMe-heading{
@@ -29,22 +26,14 @@
 }
 
 .about-left{
-    /* background-color: #c7666c; */
     width: 50%;
-     /* padding-top: 40px; */
     margin-top: 20px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .about-right{
-    /* background-color: antiquewhite; */
     width: 50%;
-    /* padding-top: 60px; */
     margin-top: 40px;
     flex-wrap: wrap;
-    /* margin-left: 180px; */
 }
 
 .info-card{
@@ -62,13 +51,10 @@
     color: #c7666c;
     font-weight: 300;
     line-height: 1.35;
-
     padding-bottom: 20px;
 }
 
 .about-personal-points-wrapper{
-    /* background-color: green; */
-    /* margin-left: 100px; */
     display: flex;
     flex-direction: column;
     width: 60%;
@@ -93,7 +79,6 @@
 }
 
 .about-hobbies{
-    /* background-color: gold; */
     display: flex;
     flex-direction: row;
     margin-top: 10px;
@@ -103,6 +88,8 @@
 
 .hobby-card{
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     box-shadow:0.3rem 0.3rem 0.5rem #e2e3e5, -0.2rem -0.2rem 0.5rem #f3f4f5;
     height: 50px;
@@ -112,4 +99,47 @@
 
 .about-discuss{
     float: right;
+}
+
+.single-hobby{
+  font-size: 30px;
+}
+
+
+
+@media only screen and (min-width:320px) and (max-width:480px){
+
+    .about-parent{
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 60px;
+    }
+
+    
+    .about-left{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .info-card{
+        background-color: white;
+        text-align: center;
+        padding: 4vw;
+        width: 100%;
+        border-radius: 25px;
+        box-shadow:0.3rem 0.3rem 0.5rem #e2e3e5, -0.2rem -0.2rem 0.5rem #f3f4f5;
+    }
+
+    .about-personal-points-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-right{
+        width: 100%;
+        margin-top: 100px;
+        flex-wrap: wrap;
+    }
 }

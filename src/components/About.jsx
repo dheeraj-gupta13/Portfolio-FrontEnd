@@ -2,7 +2,11 @@ import React, {useContext} from 'react'
 import './About.css'
 import DiscussButton from './DiscussButton'
 import {themeContext} from '../App'
-
+import { CoffeeOutlined } from '@ant-design/icons'
+import CoffeeIcon from '@mui/icons-material/Coffee';
+import SportsCricketIcon from '@mui/icons-material/SportsCricket';
+import LaptopIcon from '@mui/icons-material/Laptop';
+import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 
 function InfoCard() {
   return (
@@ -16,7 +20,18 @@ function InfoCard() {
       </div>
 
       <div className='intro-intro'>
-        <div className='intro-intro-line'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam voluptatum necessitatibus error sunt eaque ab amet! Quam corrupti magnam vel maxime dolore recusandae nisi distinctio facere, ducimus repudiandae eaque modi dignissimos eum itaque debitis qui harum sequi reprehenderit ut et. </div>
+        <div className='intro-intro-line'> 
+          <p>Hi, I am Dheeraj Gupta, persuing B.tech from Manav Rachna University. 
+              I am teach enthusiast, and I have keen Interest in coding.
+              I love competitive coding and building cool stuff. 
+            </p>
+            <p>
+                I have learnt coding by Youtube, Udemy Courses and by googling,
+                and i have made some cool project which you can find project section.
+                Also I love practicing coding problems and I have solved 2000+ problems on various platforms.
+                And have amazing ratings on these platforms
+            </p>
+        </div>
       </div>
     </div>
   )
@@ -33,7 +48,7 @@ function InfoCardSmall(param) {
 function HobbyCard(param) {
   return (
     <div className='hobby-card'>
-        {/* <img className='image' src={require('../assets/dheeraj_4.jpg')}/>  */}
+        <div className='single-hobby'>{param}</div>
     </div>
   )
 }
@@ -80,10 +95,10 @@ function About() {
 
 
               <div className='about-hobbies'>
-                <div className='about-heading'>{ HobbyCard(``) } </div>
-                <div className='about-heading'>{ HobbyCard(``) } </div>
-                <div className='about-heading'>{ HobbyCard(``) } </div>
-                <div className='about-heading'>{ HobbyCard(``) } </div>
+                <div className='about-heading'>{ HobbyCard(<CoffeeIcon />) } </div>
+                <div className='about-heading'>{ HobbyCard(<LaptopIcon/>)} </div>
+                <div className='about-heading'>{ HobbyCard(<SportsCricketIcon/>) } </div>
+                <div className='about-heading'>{ HobbyCard(<FitnessCenterIcon/>) } </div>
               </div>
             {/* </div> */}
           </div>

@@ -1,0 +1,26 @@
+.loading-parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+}
+.loading-text{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+
+    .loading-parent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    .loading-text{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}

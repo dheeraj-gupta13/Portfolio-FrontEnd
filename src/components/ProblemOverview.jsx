@@ -32,7 +32,7 @@ const formatTag = (str) => {
   }
 
 function ProblemOverview({questions}) {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <div className="problem-overview-container" onClick={() => navigate(`/discuss/problems/${formatTag(questions.ProblemTitle)}`, {state:{question:questions}})}  >

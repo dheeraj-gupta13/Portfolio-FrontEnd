@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import './NavBar.css'
 import {themeContext} from '../App'
 import Theme from './Theme'
-
+import { CloseOutlined, MenuOutlined } from '@ant-design/icons'
 
 
 function NavBar({data}) {
@@ -17,6 +17,11 @@ function NavBar({data}) {
 
     const toggle = () => {
         setToggleMenu((toggleMenu) => !toggleMenu);
+    }
+
+    const navigateNav = (path) => {
+        setToggleMenu(false);
+        navigate(path);
     }
 
 
@@ -44,25 +49,49 @@ function NavBar({data}) {
                         </div>
                     </span>
 
-                    <button onClick={toggle} className='menu-button-in-mobile'>B</button>
+                    {
+                        (toggleMenu) 
+                        ?
+                        <CloseOutlined onClick={toggle} className='menu-button-in-mobile' />
+                        : 
+                        <MenuOutlined onClick={toggle} className='menu-button-in-mobile' />
+                    }
 
                     {
                         (toggleMenu || screenWidth > 500) && (
                             <div style={{color :(theme == 'DARK') ? 'black' : 'white' }} className='buttons'>
-                                <div className='single-button'  onClick={() => navigate('/')}>Home</div>
-                                <div className='single-button'  onClick={() => navigate('/works')}>Works</div>
-                                <div className='single-button'  onClick={() => navigate('/about')}>About</div>
-                                <div className='single-button'  onClick={() => navigate('/projects')}>Projects</div>
+                                <div className='single-button'  onClick={() => navigateNav('/')}>Home</div>
+                                <div className='single-button'  onClick={() => navigateNav('/works')}>Works</div>
+                                <div className='single-button'  onClick={() => navigateNav('/about')}>About</div>
+                                <div className='single-button'  onClick={() => navigateNav('/projects')}>Projects</div>
+
+                                {
+                                    (screenWidth < 500) &&
+                                    <div className='single-button'  onClick={() => navigateNav('/chat')}>Chat</div>
+                                }
                             </div>
                         )
                     }     
                 </div>
             </div>
 
-            <div style={{color :(theme == 'DARK') ? 'black' : 'white' }} className='chat-container'>      
-                <div style={{  border:'2px solid orange' ,color :(theme == 'DARK') ? 'black' : 'white' }} className='single-chat-button'  onClick={() => navigate('/chat')}>Let's Chat</div>
-                <Theme/>
-            </div>
+            {
+                (screenWidth > 500)
+                ?
+                    <div style={{color :(theme == 'DARK') ? 'black' : 'white' }} className='chat-container'>      
+                    <div style={{  border:'2px solid orange' ,color :(theme == 'DARK') ? 'black' : 'white' }} className='single-chat-button'  onClick={() => navigate('/chat')}>Let's Chat</div>
+                        <Theme/>
+                    </div>
+                :
+                <div className='dheeraj-container-phone'>
+                    <div className='dheeraj-phone-wrapper'>
+                        <div className='dheeraj-phone'>Dheeraj</div>
+                        <div className='dot-phone'></div>
+                    </div>
+                </div>
+            }
+
+           
             <div className='seperator'></div>
         </div>
     )

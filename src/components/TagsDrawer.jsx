@@ -57,7 +57,9 @@ function TagsDrawer() {
           onChange={inputHandler}
           variant="outlined"
           fullWidth
-          label="Search"
+          label="Filter By tags"
+          color="secondary"
+          focused
         />
       </div>
 
@@ -67,7 +69,6 @@ function TagsDrawer() {
               <div className='tags-container' onClick={() => navigate(`/discuss/${formatTag(tag)}`)}>
                   <GeneralTag val={tag} />
               </div>
-            
             ))
           }
       </div>

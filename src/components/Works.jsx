@@ -2,6 +2,7 @@ import React, {useState, useEffect, useContext} from 'react'
 import { getWorksData } from '../api/works'
 import './Works.css'
 import {themeContext} from '../App'
+import Loading from './Loading'
 
 // WorkCard
 const WorkExperienceCard = ({experience}) => {
@@ -77,7 +78,7 @@ const Works = () => {
      {
       (fetching) 
       ?
-      <div>Loading...</div>
+        <Loading />
       :
 
       <div className='works-wrapper'>
