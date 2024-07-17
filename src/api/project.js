@@ -1,7 +1,8 @@
 import axios from 'axios';
 
-const baseURL = "https://portfolio-back-8f34qzs3z-dheeraj13042002.vercel.app"
-// const baseURL = "https://portfolio-back-otztjdau3-dheeraj13042002.vercel.app"; // for localhost
+// const baseURL = "https://portfolio-back-8f34qzs3z-dheeraj13042002.vercel.app"
+const baseURL = "http://portfolio-back-end-three.vercel.app"; // for localhost
+// const baseURL = "http://localhost:8080"
 
 export const getProjects =  async () => {
     try {

@@ -50,7 +50,7 @@ function ProblemOverview({questions}) {
       </div>
       <div className='right-wrapper'>
         <div className='acceptance'  style={{marginRight:(questions.ProblemLevel == "Medium") ? 120 : 140  }} >
-          {questions.ProblemAcceptanceRate}% 
+          {/* {questions.ProblemAcceptanceRate}%  */}
         </div>
         <div className='level'  style={{backgroundColor:(questions.ProblemLevel == 'Easy') ? 'green' : (questions.ProblemLevel == 'Medium') ? 'orange' : 'red'  }}>
           {questions.ProblemLevel} 

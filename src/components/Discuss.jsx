@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom'
 import { TagsDrawer, ProblemOverview} from './index'
 import Pagination from './Pagination'
 import Loading from './Loading'
+import { HomeOutlined } from "@ant-design/icons"
 
 function Discuss() {
   const { theme } = useContext(themeContext);
@@ -14,6 +15,7 @@ function Discuss() {
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage ] = useState(7);
+  const navigate = useNavigate();
 
 
   useEffect(() => {
@@ -38,11 +40,13 @@ function Discuss() {
 
   return (
     <div style={{ backgroundColor:(theme == 'DARK') ? 'white' : 'black'}}>    
-      <div className='theme'>
+      {/* <div className='theme'>
         <Theme/>
-      </div>
-      <div>
-        <div >back to Portfolio</div>
+      </div> */}
+      <div onClick={() => navigate('/')}>
+        <div className='back-to-portfolio'>
+          <HomeOutlined />
+        </div>
       </div>
 
 

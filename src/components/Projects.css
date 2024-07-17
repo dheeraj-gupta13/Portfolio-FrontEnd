@@ -52,7 +52,13 @@
 .project-link{
     font-weight: 600;
     color: #4089ed;
-
+    text-decoration: none;
+    background-color: aqua;
+    padding-left : 15px;
+    padding-right : 15px;
+    padding-top:  10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
 }
 
 .project-heading{
@@ -70,6 +76,7 @@
     display: flex;
     margin: 6px;
     padding: 4px;
+    padding-top: 20px;
     justify-content: space-between;
 }
 

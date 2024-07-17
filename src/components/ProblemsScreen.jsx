@@ -6,6 +6,7 @@ import './ProblemsScreen.css'
 import Pagination from './Pagination'
 import Loading from './Loading'
 import { useNavigate } from 'react-router-dom'
+import { HomeOutlined } from "@ant-design/icons"
 
 
 function ProblemsScreen() {
@@ -48,37 +49,43 @@ function ProblemsScreen() {
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     return (
-        <div style={{height:'100%', }}>
-            <div className='theme'>
-        <Theme/>
-      </div>
-      <div>
-        <div  onClick={() => navigate(`/`)}>back to Portfolio</div>
-      </div>
 
-        {
-            (loading)
-            ?
-            <Loading/>
-            :
+        <div className='abc'>
+            <div style={{height:'100%', }}>
+                {/* <div className='theme'>
+                    <Theme/>
+                </div> */}
+                <div onClick={() => navigate('/')}>
+                    <div className='back-to-portfolio'>
+                    <HomeOutlined />
+                    </div>
+                </div>
 
-            <div className='parent1'>
-            
+            {
+                (loading)
+                ?
+                <Loading/>
+                :
+
+                <div className='parent1'>
                 
-                <div className='left1'>
-                    <div className='tag-heading-prbem-screen'>{deFormatTag(params.id)}</div>
-                    {
-                        currentProblems.map((questions) => (
-                            <ProblemOverview  questions={questions}/>
-                        ))
-                    }
-                    <Pagination postsPerPage={postsPerPage} totalPosts={questions.length} paginate={paginate}/>
+                    
+                    <div className='left1'>
+                        <div className='tag-heading-prbem-screen'>{deFormatTag(params.id)}</div>
+                        {
+                            currentProblems.map((questions) => (
+                                <ProblemOverview  questions={questions}/>
+                            ))
+                        }
+                        <Pagination postsPerPage={postsPerPage} totalPosts={questions.length} paginate={paginate}/>
+                    </div>
+                    <div className='right1'>
+                        <TagsDrawer/>
+                    </div>
                 </div>
-                <div className='right1'>
-                    <TagsDrawer/>
-                </div>
+            }
             </div>
-        }
+
         </div>
     )
 }

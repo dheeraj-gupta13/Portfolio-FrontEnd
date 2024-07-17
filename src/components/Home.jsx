@@ -19,7 +19,18 @@ const Home = () => {
     const [fetching, setFetching] = useState(true)
     const [idx, setIdx] = useState(0)
     const { theme } = useContext(themeContext);
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth)
     const navigate = useNavigate();
+
+    useEffect(() => {
+
+      const changeWidth = () => {
+        setScreenWidth(window.innerWidth);
+      }
+  
+      window.addEventListener('resize', changeWidth)
+  
+  }, [])
 
     useEffect(() => {
         async function fetchData(){
@@ -130,9 +141,15 @@ const Home = () => {
               }
             </div>
 
-            <div className='discuss-btn-container-home'>
-              <DiscussButton/>
-            </div>
+              {
+                (screenWidth > 500)
+                &&
+                <div className='discuss-btn-container-home'>
+                  <DiscussButton/>
+                </div>
+              }
+
+           
         </div>
       }
     </div>
