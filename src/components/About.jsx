@@ -12,12 +12,12 @@ function InfoCard() {
   return (
     <div className='info-card'>
 
-      <div className='intro-poem'>
+      {/* <div className='intro-poem'>
         <div className='intro-poem-line'>Pain have some reason,</div>
         <div className='intro-poem-line'>Mistakes have some cause.</div>
         <div className='intro-poem-line'>Believe in yourself,</div>
         <div className='intro-poem-line'>Let them call you orz...</div>
-      </div>
+      </div> */}
 
       <div className='intro-intro'>
         <div className='intro-intro-line'> 
@@ -89,7 +89,7 @@ function About() {
             {/* <div > */}
               <div className='about-personal-points-wrapper'>
                 <div className='about-heading'>{ InfoCardSmall("He/ Him") } </div>
-                <div className='about-heading'>{ InfoCardSmall("20 years old") } </div>
+                <div className='about-heading'>{ InfoCardSmall("22 years old") } </div>
                 <div className='about-heading'>{ InfoCardSmall("Aries") } </div>
               </div>
 
